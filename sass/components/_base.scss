@@ -1,0 +1,61 @@
+@import "../utils/variables";
+
+/*estilos generales*/
+li
+{
+    list-style: none;
+}
+
+
+ul
+{
+    padding: 0;
+}
+
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: $gray;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+
+input,
+textarea
+{
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+
+
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section
+{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0;
+}
+
+.general--hover:hover:hover
+{
+    border-color: $blue;
+    color: $blue;
+}
+
+.general--hover:hover:hover .min__icon
+{
+    fill: $blue;
+}

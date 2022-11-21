@@ -1,0 +1,20 @@
+ $white: #fff;
+ $black: #000;
+ $gray: #757575;
+ $blue: #2196f3;
+ $darkgray: #212121;
+ $grayishblue: #afb1b8;
+ $border-color: #ececec;
+ $bg-color: #2f303a;
+ $light-grayish: #f5f4fa;
+ $secondary-border: #eeeeee;
+ $occasionally-font: "Roboto";
+
+
+ /*estilos generales*/
+ body
+ {
+     color: $black;
+     font-family: "roboto",
+         "sans-serif";
+ }

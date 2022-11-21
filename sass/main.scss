@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./components/base";
+@import "./components/portfolio";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/bgmodal";
+@import "./components/buttons";
+@import "./components/values";
+@import "./components/teamwork";
+@import "./components/costumers";
+@import "./components/focuswork";
+
+/*estilos responsive*/
+.responsive-container
+{
+    min-width: 480px;
+    max-width: 100%;
+}

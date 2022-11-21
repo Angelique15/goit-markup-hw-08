@@ -1,0 +1,56 @@
+@import "../utils/variables";
+
+/*stilos de los parrafos*/
+.section-2
+{
+    background-color: $white;
+}
+
+.paragraph
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.value
+{
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    height: 16px;
+    width: 270px;
+    left: 215px;
+    top: 775px;
+
+    &__description
+    {
+        color: $gray;
+        font-size: 14px;
+        line-height: 2.4;
+        letter-spacing: 0.03em;
+        width: 270px;
+        height: 75px;
+    }
+}
+
+/*iconos de los valores*/
+.paragraph-container
+{
+    width: 270px;
+    height: 120px;
+    background-color: $light-grayish;
+    border: 1px $light-grayish solid;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    &__icons
+    {
+        width: 65.32px;
+        height: 70px;
+        fill: $darkgray;
+        margin: 25px 100px;
+    }
+
+}

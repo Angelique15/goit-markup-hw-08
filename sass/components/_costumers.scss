@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+.costumer-svg
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client__container
+{
+    border: 1px $grayishblue solid;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
+
+}
+
+.client__logo
+{
+    height: 52px;
+    width: 106px;
+    fill: $grayishblue;
+}

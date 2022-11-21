@@ -1,0 +1,100 @@
+@import "../utils/variables";
+
+/*estilos de los tableros del portafolio*/
+.section-6
+{
+    justify-content: space-around;
+    padding-block-end: 40px;
+}
+
+.projects
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+    margin-top: -160px;
+    padding-left: 0;
+}
+
+.project__board
+{
+    width: 370px;
+    height: 404px;
+    box-sizing: border-box;
+    background: $white;
+    border: 1px solid $secondary-border;
+    flex-basis: left calc(50% - 370px / 2 - 400px);
+    flex-basis: top calc(50% - 294px / 2 + 349px);
+
+    .project__board>h3
+    {
+        height: 32px;
+        width: 322px;
+    }
+
+    .project__board>h4
+    {
+        height: 20px;
+        width: 322px;
+    }
+}
+
+.project__board:hover
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+
+.name__project
+{
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    line-height: 36px;
+    color: $darkgray;
+    padding-left: 24px;
+    margin-bottom: 4px;
+}
+
+.description__project
+{
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    margin: 1px;
+}
+
+/*estilos de la caja superpuesta de los proyectos*/
+.rising__window
+{
+    position: relative;
+    overflow: hidden;
+
+    .rising__box
+    {
+        position: absolute;
+        width: 370px;
+        height: 294px;
+        top: 0px;
+        background: rgba(33, 150, 243, 0.9);
+        transform: translateY(105%);
+        transition: transform 250ms ease;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 90%;
+        color: $white;
+        padding: 64px 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.project__board:hover .rising__box
+{
+    transform: translateY(0);
+}

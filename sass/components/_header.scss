@@ -1,0 +1,89 @@
+@import "../utils/variables";
+
+header
+{
+    background-color: $white;
+    border-radius: 0px;
+    border-bottom: solid 1px $border-color;
+}
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: calc((80px - 48px) / 2) 0;
+}
+
+header .container :nth-child(1)
+{
+    display: flex;
+    align-items: center;
+}
+
+header ul
+{
+    display: flex;
+}
+
+/*stilos del encabezado*/
+.logo__web
+{
+    color: $blue;
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+.style__link
+{
+    color: $darkgray;
+    font-family: $occasionally-font;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.style__link.contact
+{
+    color: $gray;
+}
+
+.underline::after
+{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    background-color: $blue;
+    border-radius: 2px;
+    visibility: hidden;
+    margin-top: 76px;
+    transition: transform 0.5s ease;
+}
+
+.general--hover:hover.underline::after
+{
+    visibility: visible;
+    transform-origin: left;
+}
+
+.contact
+{
+    color: $gray;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    padding-left: 0;
+
+    &__icons
+    {
+        width: 16px;
+        height: 16px;
+        fill: $grayishblue;
+        margin-right: 10px;
+    }
+}
