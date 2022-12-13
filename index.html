@@ -48,6 +48,40 @@
                             </svg>+52 55 5529 6000</a>
                     </li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-container js-menu-container is is-hidden" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <ul class="mobile__menu">
+                    <li><a href="" class="link">Studio</a></li>
+                    <li><a href="" class="link">Portafolio</a></li>
+                    <li><a href="" class="link">Contacts</a></li>
+                </ul>
+                <ul class="menu-mobile">
+                    <li><a class="contact__mobile link">+1 212-772-4150</a></li>
+                    <li><a class="contact__mobile link">info@devstudio.com</a></li>
+                </ul>
+
+                <ul class="mobile-links">
+                    <li><a>Intagram</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>Facebook</a></li>
+                    <li><a>LinkedIn</a></li>
+                </ul>
             </div>
         </header>
         <!--contenido principal de la página-->
@@ -201,7 +235,8 @@
                     <h2 class="title__team"><strong>Nuestro Equipo</strong></h2>
                     <ul class="team__work">
                         <li class="professional__board">
-                            <img class="imagen" src="images/P01.jpg" alt="empleado-webstudio" width="270" height="260">
+                            <img class="imagen__prof" src="images/P01.jpg" alt="empleado-webstudio" width="270"
+                                height="260">
                             <h5 class="professional__name"><b>Andrés Cubo</b></h5>
                             <p class="profession">Diseñador de Productos</p>
                             <div class="social-team-section">
@@ -229,7 +264,8 @@
                             </div>
                         </li>
                         <li class="professional__board">
-                            <img class="imagen" src="images/P02.jpg" alt="empleado-webstudio" width="270" height="260">
+                            <img class="imagen__prof" src="images/P02.jpg" alt="empleado-webstudio" width="270"
+                                height="260">
                             <h5 class="professional__name"><b>Carla Palacios</b></h5>
                             <p class="profession">Desarrolladora Frontend</p>
                             <div class="social-team-section">
@@ -257,7 +293,8 @@
                             </div>
                         </li>
                         <li class="professional__board">
-                            <img class="imagen" src="images/P03.jpg" alt="empleado-webstudio" width="270" height="260">
+                            <img class="imagen__prof" src="images/P03.jpg" alt="empleado-webstudio" width="270"
+                                height="260">
                             <h5 class="professional__name"><b>Mario Dorado</b></h5>
                             <p class="profession">Marketing</p>
                             <div class="social-team-section">
@@ -271,7 +308,6 @@
                                         <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                                     </svg>
                                 </div>
-
                                 <div class="social-team__container">
                                     <svg class="social-team__icon">
                                         <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
@@ -285,7 +321,8 @@
                             </div>
                         </li>
                         <li class="professional__board">
-                            <img class="imagen" src="images/P04.jpg" alt="empleado-webstudio" width="270" height="260">
+                            <img class="imagen__prof" src="images/P04.jpg" alt="empleado-webstudio" width="270"
+                                height="260">
                             <h5 class="professional__name"><b>Pablo Mijangos</b></h5>
                             <p class="profession">Diseñador IU</p>
                             <div class="social-team-section">
@@ -355,9 +392,9 @@
             </section>
         </main>
         <!--Contenido del pie de página-->
-        <footer>
+        <footer class="foot__responsive">
             <div class="container section">
-                <address>
+                <address class="foot__add">
                     <a class="logo__web" href="webstudio">WebStudio</a>
                     <ul>
                         <li class="list__city">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
@@ -411,9 +448,14 @@
                         </button>
                     </form>
                 </div>
+            </div>
         </footer>
     </div>
-    <!--etiqueta modal script -->
+    <!--etiquetas script -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

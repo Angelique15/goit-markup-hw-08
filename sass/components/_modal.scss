@@ -1,0 +1,88 @@
+@import "/sass/utils/variables";
+
+/*estilos de la ventana modal*/
+.pop-up-modal
+{
+    z-index: 1;
+    position: fixed;
+    width: 528px;
+    height: 581px;
+    margin: -260px 686px;
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pop-up-modal.is-hidden
+{
+    visibility: hidden;
+    transition: opacity 0.6s;
+}
+
+.modal
+{
+    width: 528px;
+    height: 581px;
+    border-radius: 15px;
+    padding: 8px;
+    position: relative;
+}
+
+.form__text
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*estilos de los iconos de la ventana modal*/
+.modal__icons
+{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.check
+{
+    width: 16px;
+    height: 15px;
+    fill: none;
+    border: 2px solid var(--darkgray);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.form__paragraph
+{
+    font-size: 14px;
+    line-height: 24px;
+    width: 400.62px;
+    display: block;
+    height: 24px;
+    color: var(--gray);
+    margin-left: 40px;
+}
+
+.general--hover:hover+.modal__icons,
+.general--hover:focus+.modal__icons
+{
+    fill: var(--blue);
+    border: var(--blue);
+}
+
+input:checked+.modal__icons .check
+{
+    border-color: var(--blue);
+    background-color: var(--blue);
+    fill: var(--white);
+    border: none;
+}

@@ -9,10 +9,5 @@
 @import "./components/teamwork";
 @import "./components/costumers";
 @import "./components/focuswork";
-
-/*estilos responsive*/
-.responsive-container
-{
-    min-width: 480px;
-    max-width: 100%;
-}
+@import "./components/responsive";
+@import "./components/mobile";

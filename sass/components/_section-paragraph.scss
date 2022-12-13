@@ -1,0 +1,54 @@
+@import "/sass/utils/variables";
+
+/*stilos de los parrafos*/
+.section-2
+{
+  background-color: var(--white);
+}
+
+.paragraph
+{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.icons-container__para
+{
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border: 1px #f5f4fa solid;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.paragraph__icons
+{
+  width: 65.32px;
+  height: 70px;
+  fill: var(--darkgray);
+  margin: 25px 100px;
+}
+
+.value
+{
+  color: var(--darkgray);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  height: 16px;
+  width: 270px;
+  left: 215px;
+  top: 775px;
+}
+
+.val__description
+{
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.03em;
+  width: 270px;
+  height: 75px;
+}

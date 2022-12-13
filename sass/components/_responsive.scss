@@ -1,0 +1,178 @@
+@import "../utils/variables";
+
+/*estilos responsive*/
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        max-width: 100vw;
+        color: $black;
+        font-family: "roboto",
+            "sans-serif";
+    }
+
+    label
+    {
+        margin-left: 3%;
+    }
+
+    .container .section
+    {
+        max-width: 480px;
+
+    }
+
+    .style__link
+    {
+        display: none;
+    }
+
+    .section-1
+    {
+        width: 100%;
+        height: 400px;
+        display: block;
+        justify-content: center;
+
+        .container__fluid
+        {
+
+            background-size: 480px 400px;
+        }
+    }
+
+    .paragraph
+    {
+        display: block;
+        flex-direction: column;
+        padding-left: 15px;
+
+        .value__description
+        {
+            min-width: 34%;
+            min-height: 2%;
+        }
+    }
+
+    .paragraph-container
+    {
+        min-width: 34%;
+        min-height: 60%;
+        padding-right: 15px;
+
+        .paragraph-container__icons
+        {
+            margin-left: 191px;
+        }
+
+    }
+
+    .section-3
+    {
+        display: none;
+    }
+
+    .title__team
+    {
+        text-align: left;
+        margin-left: 3%;
+
+    }
+
+    .section-4
+    {
+        width: 90%;
+        height: 30.7%;
+
+        .team__work
+        {
+            display: block;
+            flex-direction: column;
+            padding: 15px;
+            max-width: 35%;
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    .professional__board
+    {
+        min-width: 100%;
+        min-height: 622px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+
+        .imagen__prof
+        {
+            width: 100%;
+            height: 90%;
+        }
+    }
+
+    .costumer-svg
+    {
+        width: calc(100vw/10);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .client__container
+    {
+        margin-right: 30px;
+        margin-left: 15px;
+    }
+
+    footer .container
+    {
+        width: 90%;
+        display: block;
+        justify-content: center;
+
+        .send-section
+        {
+            display: block;
+            margin: 0;
+
+            .subscribe__title
+            {
+                margin-left: 10%;
+            }
+        }
+
+        .media-links-container
+        {
+            margin-left: 20%;
+        }
+
+        .foot__responsive
+        {
+            text-align: center;
+            width: 100%;
+        }
+
+        .media__title
+        {
+            margin-left: 30%;
+        }
+
+        .foot__button
+        {
+            margin-top: 2%;
+            margin-left: 20%;
+        }
+
+        .foot__add
+        {
+            display: block;
+            margin-right: 0;
+            margin-left: 18%;
+            text-align: center;
+            margin-bottom: 15%;
+
+            .contact__foot
+            {
+                margin-right: 30%;
+            }
+        }
+    }
+}

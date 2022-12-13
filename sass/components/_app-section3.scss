@@ -1,0 +1,40 @@
+@import "/sass/utils/variables";
+
+/*a qué nos dedicamos estilos*/
+.section-3.container
+{
+  background-color: var(--white);
+  width: 373.16px;
+  height: 323.7px;
+}
+
+.title__focus
+{
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--darkgray);
+}
+
+.focus__on
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overload
+{
+  position: absolute;
+  width: 372px;
+  height: 70px;
+  top: 1435px;
+  margin-top: 185px;
+  background: rgba(47, 48, 58, 0.8);
+  opacity: 80%;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}

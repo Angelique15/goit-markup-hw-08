@@ -1,0 +1,94 @@
+@import "/sass/utils/variables";
+
+/*stilos del equipo de trabajo*/
+.section-4
+{
+    background-color: #f5f4fa;
+    min-height: 708px;
+}
+
+.title__team
+{
+    color: var(--darkgray);
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.team__work
+{
+    background-color: #f5f4fa;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+.professional__board
+{
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    min-height: 428px;
+
+    &__name
+    {
+        width: 100%;
+        height: 19px;
+        left: 295px;
+        top: 1986px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: var(--darkgray);
+        margin-bottom: 10px;
+    }
+
+    .profession
+    {
+        width: 100%;
+        height: 19px;
+        left: 253px;
+        top: 2015px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--gray);
+    }
+}
+
+.social-team-section
+{
+    display: flex;
+    justify-content: center;
+
+    &__container
+    {
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        padding: 12px;
+        background-color: var(--white);
+        fill: #afb1b8;
+
+        &__container:hover
+        {
+            background-color: var(--blue);
+            fill: var(--white);
+        }
+
+        &__icon
+        {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
