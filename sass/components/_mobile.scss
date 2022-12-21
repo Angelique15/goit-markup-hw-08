@@ -12,16 +12,18 @@
     outline: none;
 }
 
+@media (min-width: 1200px)
+{
+    .menu-toggle
+    {
+        display: none;
+    }
+}
+
 .menu-toggle:hover,
 .menu-toggle:focus
 {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (min-width: 768px)
-{
-    .menu-toggle
-    {}
 }
 
 .menu-container
@@ -86,10 +88,10 @@
 
 .contact__mobile
 {
-    padding-bottom: 74px;
     font-size: 24px;
     gap: 10px;
     cursor: pointer;
+    padding-bottom: 25px;
 }
 
 .contact__mobile:hover
@@ -100,7 +102,6 @@
 .mobile-links
 {
     margin: auto;
-    padding-top: 70px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;

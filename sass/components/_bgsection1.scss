@@ -4,7 +4,10 @@
 .section-1
 {
   background-color: #2f303a;
-  height: 600px;
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,7 +15,8 @@
 
 .container__fluid
 {
-  height: 600px;
+  width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/overlay.jpg);
   background-repeat: no-repeat;
