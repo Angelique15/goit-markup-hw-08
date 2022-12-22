@@ -25,11 +25,22 @@
 @media screen and (max-width: 1000px)
 {
 
-
     .section-3,
     .overload
     {
         display: none;
+    }
+
+    .section-1,
+    .container__fluid
+    {
+        min-width: 100%;
+        background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/overlay.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
 
@@ -45,21 +56,11 @@
         font-size: 14px;
         margin-left: -10%;
     }
-
-    .section-1,
-    .container__fluid
-    {
-        width: 100vw;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
 }
 
 
 @media screen and (max-width: 768px)
 {
-
     .contact--hover
     {
         display: none;
@@ -74,20 +75,23 @@
 
 @media screen and (max-width: 768px)
 {
+    .container
+    {
+        max-width: 768px;
+    }
+
     .team__work
     {
         display: grid;
-        grid-template-columns: repeat (1, 1fr);
         gap: 30px;
-        margin-left: 3%;
+        margin-left: 7%;
     }
 
     .paragraph
     {
         display: grid;
-        grid-template-columns: repeat (1, 1fr);
         gap: 50px;
-        margin-left: 3%;
+        margin-left: 7%;
     }
 
     .costumer-svg
@@ -110,14 +114,14 @@
     .title__team
     {
         text-align: left;
-        margin-left: 3%;
+        margin-left: 5%;
 
     }
 
     .pop-up-modal,
     form,
     .form__text,
-    .check__mark
+    .check__mark,
     {
         max-width: calc(100vw / 1.50);
         margin-left: 0;
@@ -172,7 +176,7 @@
         max-width: 1000px;
     }
 
-    .contact__responsive
+    .contact__responsive,
     {
         margin-left: 50px;
     }
@@ -181,6 +185,11 @@
     {
         margin-right: 8px;
         margin-left: 8px;
+    }
+
+    .solutions__button
+    {
+        margin-left: 35%;
     }
 
     .container
@@ -197,7 +206,7 @@
     {
         max-width: 70%;
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: 300px 1fr;
         gap: 30px;
         margin-left: 10%;
     }
@@ -207,7 +216,7 @@
     {
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: 300px 1fr;
         gap: 50px;
         margin-left: 10%;
     }
@@ -224,6 +233,11 @@
     .title__team
     {
         margin-left: -25%;
+    }
+
+    .pop-up-modal
+    {
+        margin-left: 0;
     }
 
     footer .container
@@ -252,8 +266,5 @@
             margin-left: 10%;
         }
     }
-
-
-
 
 }
