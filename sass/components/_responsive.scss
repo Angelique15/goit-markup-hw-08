@@ -1,43 +1,16 @@
 @import "../utils/variables";
 
-@media screen and (min-width: 1200px)
-{
-    .container
-    {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
-        /*border: 1px solid green;*/
-    }
-
-    .section
-    {
-        padding-top: 94px;
-    }
-}
-
-@media screen and (max-width: 1000px)
-{
-
-    nav
-    {
-        display: none;
-    }
-
-    .section-1,
-    .container__fluid
-    {
-        max-width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
 
 @media screen and (min-width: 768px)
 {
+    header
+    {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dislay-menu__mobile
     {
         display: none;
@@ -45,8 +18,23 @@
 
     .menu-toggle
     {
-        margin-left: -50%;
+        margin-left: -500px;
     }
+}
+
+@media screen and (max-width: 1000px)
+{
+
+
+    .section-3,
+    .overload
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px)
+{
 
     .contact__responsive,
     .contact--hover
@@ -55,9 +43,19 @@
         flex-direction: column;
         align-items: center;
         font-size: 14px;
-        margin-left: -360%;
+        margin-left: -10%;
+    }
+
+    .section-1,
+    .container__fluid
+    {
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
+
 
 @media screen and (max-width: 768px)
 {
@@ -66,10 +64,40 @@
     {
         display: none;
     }
+
+    nav
+    {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 480px) and (max-width: 765px)
+
+@media screen and (max-width: 768px)
 {
+    .team__work
+    {
+        display: grid;
+        grid-template-columns: repeat (1, 1fr);
+        gap: 30px;
+        margin-left: 3%;
+    }
+
+    .paragraph
+    {
+        display: grid;
+        grid-template-columns: repeat (1, 1fr);
+        gap: 50px;
+        margin-left: 3%;
+    }
+
+    .costumer-svg
+    {
+        width: calc(100vw/5);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 3%;
+        gap: 15px
+    }
 
     header
     {
@@ -135,4 +163,97 @@
     {
         max-width: 70%;
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px)
+{
+    header
+    {
+        max-width: 1000px;
+    }
+
+    .contact__responsive
+    {
+        margin-left: 50px;
+    }
+
+    .style__link
+    {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .container
+    {
+        max-width: 1000px;
+    }
+
+    .section
+    {
+        padding-top: 94px;
+    }
+
+    .team__work
+    {
+        max-width: 70%;
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        gap: 30px;
+        margin-left: 10%;
+    }
+
+    .paragraph,
+    .responsive__pargraph
+    {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        gap: 50px;
+        margin-left: 10%;
+    }
+
+    .costumer-svg
+    {
+        width: calc(100vw/5);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 10%;
+        gap: 15px
+    }
+
+    .title__team
+    {
+        margin-left: -25%;
+    }
+
+    footer .container
+    {
+        flex-wrap: wrap;
+        margin-left: 10%;
+
+        .send-section
+        {
+            flex-direction: column;
+        }
+
+        .media__title
+        {
+            margin-left: 150px;
+        }
+
+        .foot__button
+        {
+            margin-left: 30%;
+        }
+
+        .subscribe__title
+        {
+            text-align: center;
+            margin-left: 10%;
+        }
+    }
+
+
+
+
 }
